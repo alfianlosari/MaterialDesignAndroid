@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v4.view.ViewPager android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right|bottom"
+        android:layout_marginBottom="16dp"
+        android:layout_marginRight="16dp"
+        android:src="@drawable/ic_share"
+        android:onClick="onShareButtonClicked"
+        android:contentDescription="@string/action_share"/>
+
+    <ImageButton
+        android:id="@+id/fab2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left|top"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:foreground="?attr/selectableItemBackgroundBorderless"
+        android:background="@android:color/transparent"
+        android:src="@drawable/ic_arrow_back"
+        android:onClick="onBackButtonClicked"
+        android:contentDescription="@string/action_back"/>
+
+</FrameLayout>
+
+
